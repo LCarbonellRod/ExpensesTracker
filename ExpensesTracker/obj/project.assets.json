@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj",
-      "projectName": "Expenses Tracker",
-      "projectPath": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj",
+      "projectUniqueName": "C:\\Dev\\ExpensesTracker\\ExpensesTracker\\ExpensesTracker.csproj",
+      "projectName": "ExpensesTracker",
+      "projectPath": "C:\\Dev\\ExpensesTracker\\ExpensesTracker\\ExpensesTracker.csproj",
       "packagesPath": "C:\\Users\\lcarb\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\obj\\",
+      "outputPath": "C:\\Dev\\ExpensesTracker\\ExpensesTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lcarb\\AppData\\Roaming\\NuGet\\NuGet.Config",

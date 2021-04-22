@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YZUivPZMC1Y8D6ulUW4Dn2L24piBoo/To4caemdNmVG3GmKCSvC4KoU3SFZD+qlo/s2CGvGWSAX5dIhdmcXsTA==",
+  "dgSpecHash": "PigkntM5AvhsgXNi8tUSC1ISo+hgQucBqo/vQh6g8hvzXixSnDDaMw6eI7Rtr6FhoimHP1p5U8sviO8K6VSn2w==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj",
+  "projectFilePath": "C:\\Dev\\ExpensesTracker\\ExpensesTracker\\ExpensesTracker.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

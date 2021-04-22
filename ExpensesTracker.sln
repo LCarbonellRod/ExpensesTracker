@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses Tracker", "Expenses Tracker\Expenses Tracker.csproj", "{801CA1BB-9EDD-4A37-BBF2-E5DCD8BE2C1D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{5D9E6003-964B-49FE-B8EB-6FB984EF4AF7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTrackerCore", "ExpensesTrackerCore\ExpensesTrackerCore.csproj", "{794FF91B-31A5-4015-9F04-F14C9474A445}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{801CA1BB-9EDD-4A37-BBF2-E5DCD8BE2C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{801CA1BB-9EDD-4A37-BBF2-E5DCD8BE2C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{801CA1BB-9EDD-4A37-BBF2-E5DCD8BE2C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{801CA1BB-9EDD-4A37-BBF2-E5DCD8BE2C1D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D9E6003-964B-49FE-B8EB-6FB984EF4AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D9E6003-964B-49FE-B8EB-6FB984EF4AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D9E6003-964B-49FE-B8EB-6FB984EF4AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
