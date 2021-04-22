@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JUovZklpaMbW51aOD5wyMswMhMp3LgjFikED5GAzxIHCP6BiF1QcLfBnQDUEhagS6c+6RtYEooyVDH0t7r5Njw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lcarb\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lcarb\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

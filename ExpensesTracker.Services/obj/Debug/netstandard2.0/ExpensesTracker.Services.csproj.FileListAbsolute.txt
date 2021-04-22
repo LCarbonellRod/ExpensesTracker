@@ -1,0 +1,12 @@
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\bin\Debug\netstandard2.0\ExpensesTracker.Services.deps.json
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\bin\Debug\netstandard2.0\ExpensesTracker.Services.dll
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\bin\Debug\netstandard2.0\ExpensesTracker.Services.pdb
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\bin\Debug\netstandard2.0\ExpensesTrackerCore.dll
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\bin\Debug\netstandard2.0\ExpensesTrackerCore.pdb
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.csprojAssemblyReference.cache
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.AssemblyInfoInputs.cache
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.AssemblyInfo.cs
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.csproj.CoreCompileInputs.cache
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.csproj.CopyComplete
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.dll
+C:\Users\lcarb\source\repos\Expenses Tracker\ExpensesTracker.Services\obj\Debug\netstandard2.0\ExpensesTracker.Services.pdb
