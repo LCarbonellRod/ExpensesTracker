@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\Expenses Tracker\\Expenses Tracker.csproj": {}
+    "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\Expenses Tracker\\Expenses Tracker.csproj": {
+    "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\Expenses Tracker\\Expenses Tracker.csproj",
+        "projectUniqueName": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj",
         "projectName": "Expenses Tracker",
-        "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\Expenses Tracker\\Expenses Tracker.csproj",
+        "projectPath": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\Expenses Tracker.csproj",
         "packagesPath": "C:\\Users\\lcarb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\Expenses Tracker\\obj\\",
+        "outputPath": "C:\\Dev\\ExpensesTracker\\Expenses Tracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lcarb\\AppData\\Roaming\\NuGet\\NuGet.Config",

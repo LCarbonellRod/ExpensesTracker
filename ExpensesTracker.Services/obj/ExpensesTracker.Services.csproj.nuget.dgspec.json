@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj": {}
+    "C:\\Dev\\ExpensesTracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj": {
+    "C:\\Dev\\ExpensesTracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj",
+        "projectUniqueName": "C:\\Dev\\ExpensesTracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj",
         "projectName": "ExpensesTracker.Services",
-        "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj",
+        "projectPath": "C:\\Dev\\ExpensesTracker\\ExpensesTracker.Services\\ExpensesTracker.Services.csproj",
         "packagesPath": "C:\\Users\\lcarb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTracker.Services\\obj\\",
+        "outputPath": "C:\\Dev\\ExpensesTracker\\ExpensesTracker.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lcarb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
-                "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj"
+              "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
+                "projectPath": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
+    "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj",
+        "projectUniqueName": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj",
         "projectName": "ExpensesTrackerCore",
-        "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj",
+        "projectPath": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj",
         "packagesPath": "C:\\Users\\lcarb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\obj\\",
+        "outputPath": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lcarb\\AppData\\Roaming\\NuGet\\NuGet.Config",

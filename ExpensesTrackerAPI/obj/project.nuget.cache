@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Mmdv6TMD7fqviKU0g9oNeVvcPiVdAL4/IDu4oXkLDZ0jdZdcHZjV05FIzP55YOIfku/ImuOgIF4Ktnfuu5hAQ==",
+  "dgSpecHash": "RN/7NCwyRZxs1YC0oUiz1PNW5ZmMQz6rZpbeohkoBwgiUYCBean/Z1TeYpzVqUWfHiHjXoDG03MlMSGtboJMKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerAPI\\ExpensesTrackerAPI.csproj",
+  "projectFilePath": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerAPI\\ExpensesTrackerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lcarb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lcarb\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

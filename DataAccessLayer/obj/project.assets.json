@@ -7231,11 +7231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Dev\\ExpensesTracker\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Dev\\ExpensesTracker\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\lcarb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Dev\\ExpensesTracker\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lcarb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7251,8 +7251,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
-              "projectPath": "C:\\Users\\lcarb\\source\\repos\\Expenses Tracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj"
+            "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj": {
+              "projectPath": "C:\\Dev\\ExpensesTracker\\ExpensesTrackerCore\\ExpensesTrackerCore.csproj"
             }
           }
         }
