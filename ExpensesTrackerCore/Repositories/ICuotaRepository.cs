@@ -8,6 +8,6 @@ namespace ExpensesTrackerCore.Repositories
 {
     public interface ICuotaRepository : IRepository<Cuota>
     {
-        Task<IEnumerable<Cuota>> GetAllByGastoIdAsync(int artistId);
+        Task<IEnumerable<Cuota>> GetAllByGastoIdAsync(Guid artistId);
     }
 }
