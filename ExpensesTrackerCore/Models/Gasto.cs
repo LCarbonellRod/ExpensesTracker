@@ -15,9 +15,11 @@ namespace ExpensesTrackerCore.Models
         public bool GastoInactivo { get; set; }
         public string RazonInactivo { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public DateTime DiaReactivacion { get; set; }
+        public DateTime? DiaReactivacion { get; set; }
         public bool EsReactivable { get; set; }
-        public DateTime FechaPagado { get; set; }
+        public DateTime? FechaPagado { get; set; }
+
+        public DateTime FechaInicioPago { get; set; }
 
         public List<Cuota> Cuotas { get; set; } = new List<Cuota>();
     }
