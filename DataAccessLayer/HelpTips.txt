@@ -1,0 +1,7 @@
+﻿
+-- Add migration example
+dotnet ef --startup-project ExpensesTrackerAPI/ExpensesTrackerAPI.csproj migrations add MakeSomePropertiesNullable -p DataAccessLayer/DataAccessLayer.csproj
+
+
+-- Update Database Example
+dotnet ef --startup-project ExpensesTrackerAPI/ExpensesTrackerAPI.csproj database update 
