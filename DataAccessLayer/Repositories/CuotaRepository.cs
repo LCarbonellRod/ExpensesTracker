@@ -37,7 +37,7 @@ namespace DataAccessLayer.Repositories
                 .ToListAsync();
         }
 
-        public Task<IEnumerable<Cuota>> GetAllByGastoIdAsync(int artistId)
+        public Task<IEnumerable<Cuota>> GetAllByGastoIdAsync(Guid artistId)
         {
             throw new NotImplementedException();
         }

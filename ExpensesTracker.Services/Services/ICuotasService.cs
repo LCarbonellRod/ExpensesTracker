@@ -8,11 +8,10 @@ namespace ExpensesTracker.Services.Services
 {
     public interface ICuotasService
     {
-        Task<IEnumerable<Cuota>> GetAllWithGastos();
-        Task<Cuota> GetCuotaById(int id);
-        Task<IEnumerable<Cuota>> GetCuotasByGastoId(int gastoId);
+        Task<Cuota> GetCuotaById(Guid id);
+        Task<IEnumerable<Cuota>> GetCuotasByGastoId(Guid gastoId);
         Task<Cuota> CreateCuota(Cuota newCuota);
-        Task UpdateCuota(Cuota cuotaToBeUpdated, Cuota cuota);
+        Task<int> UpdateCuota(Cuota cuotaToBeUpdated);
         Task DeleteCuota(Cuota cuota);
     }
 }

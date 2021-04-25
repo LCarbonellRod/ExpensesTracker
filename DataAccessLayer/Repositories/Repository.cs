@@ -37,7 +37,7 @@ namespace DataAccessLayer.Repositories
             return await Context.Set<TEntity>().ToListAsync();
         }
 
-        public ValueTask<TEntity> GetByIdAsync(int id)
+        public ValueTask<TEntity> GetByIdAsync(Guid id)
         {
             return Context.Set<TEntity>().FindAsync(id);
         }
@@ -55,11 +55,6 @@ namespace DataAccessLayer.Repositories
         public Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
         {
             return Context.Set<TEntity>().SingleOrDefaultAsync(predicate);
-        }
-
-        Task<TEntity> IRepository<TEntity>.GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
         }
     }
 }
