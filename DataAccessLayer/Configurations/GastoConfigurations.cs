@@ -11,6 +11,8 @@ namespace DataAccessLayer.Configurations
     {
         public void Configure(EntityTypeBuilder<Gasto> builder)
         {
+            builder.Property(x => x.Id).ValueGeneratedOnAdd();
+
             builder
                 .HasKey(m => m.Id);
 

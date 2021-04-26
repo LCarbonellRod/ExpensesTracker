@@ -11,6 +11,8 @@ namespace DataAccessLayer.Configurations
     {
         public void Configure(EntityTypeBuilder<Cuota> builder)
         {
+            builder.Property(x => x.Id).ValueGeneratedOnAdd();
+
             builder
                 .HasKey(a => a.Id);
 
