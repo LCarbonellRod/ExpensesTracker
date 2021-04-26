@@ -19,6 +19,8 @@ namespace ExpensesTrackerAPI.Mapping
             // Resource to Domain
             CreateMap<GastoResource, Gasto>();
             CreateMap<CuotaResource, Cuota>();
+
+            CreateMap<SaveGastoResource, Gasto>();
         }
     }
 }
