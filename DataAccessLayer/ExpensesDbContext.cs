@@ -1,5 +1,7 @@
 ﻿using DataAccessLayer.Configurations;
 using ExpensesTrackerCore.Models;
+using ExpensesTrackerCore.Models.Auth;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    public class ExpensesDbContext : DbContext
+    public class ExpensesDbContext : IdentityDbContext<User, Role, Guid>
     {
         public DbSet<Gasto> Gastos { get; set; }
         public DbSet<Cuota> Cuotas { get; set; }
@@ -18,6 +20,8 @@ namespace DataAccessLayer
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+
             builder
                 .ApplyConfiguration(new GastoConfigurations());
 

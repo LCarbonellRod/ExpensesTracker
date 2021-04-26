@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ExpensesTrackerAPI.Resources;
 using ExpensesTrackerCore.Models;
+using ExpensesTrackerCore.Models.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,9 @@ namespace ExpensesTrackerAPI.Mapping
             CreateMap<CuotaResource, Cuota>();
 
             CreateMap<SaveGastoResource, Gasto>();
+
+            CreateMap<UserSignUpResource, User>()
+            .ForMember(u => u.UserName, opt => opt.MapFrom(ur => ur.Email));
         }
     }
 }

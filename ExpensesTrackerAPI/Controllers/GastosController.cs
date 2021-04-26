@@ -7,12 +7,18 @@ using ExpensesTracker.Services.Services;
 using ExpensesTrackerAPI.Resources;
 using ExpensesTrackerAPI.Validators;
 using ExpensesTrackerCore.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExpensesTrackerAPI.Controllers
 {
+
+    //[Authorize("OnlyTest")] if I would like to authorize using policies too, i should add this.
+
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class GastosController : ControllerBase
     {
 
