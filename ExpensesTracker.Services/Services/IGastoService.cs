@@ -10,7 +10,7 @@ namespace ExpensesTracker.Services.Services
         Task<IEnumerable<Gasto>> GetAllGastos();
         Task<Gasto> GetGastoById(Guid id);
         Task<Gasto> CreateGasto(Gasto newGasto);
-        Task<int> UpdateGasto(Gasto gastoToBeUpdated);
+        Task<int> UpdateGasto(Gasto gastoToBeUpdated, Gasto newGasto);
         Task DeleteGasto(Gasto gasto);
     }
 }

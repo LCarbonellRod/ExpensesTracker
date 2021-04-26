@@ -10,7 +10,5 @@ namespace ExpensesTrackerCore.Repositories
         IGastoRepository Gastos { get; }
         ICuotaRepository Cuotas { get; }
         Task<int> CommitAsync();
-
-        Task<int> UpdateAsync<TEntity>(TEntity entityToBeUpdated) where TEntity : class; 
     }
 }

@@ -11,7 +11,7 @@ namespace ExpensesTracker.Services.Services
         Task<Cuota> GetCuotaById(Guid id);
         Task<IEnumerable<Cuota>> GetCuotasByGastoId(Guid gastoId);
         Task<Cuota> CreateCuota(Cuota newCuota);
-        Task<int> UpdateCuota(Cuota cuotaToBeUpdated);
+        Task<int> UpdateCuota(Cuota cuotaToBeUpdated, Cuota newCuota);
         Task DeleteCuota(Cuota cuota);
     }
 }

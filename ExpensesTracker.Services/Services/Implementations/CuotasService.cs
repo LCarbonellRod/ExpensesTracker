@@ -40,9 +40,9 @@ namespace ExpensesTracker.Services.Services.Implementations
                 .GetAllByGastoIdAsync(gastoId);
         }
 
-        public async Task<int> UpdateCuota(Cuota cuotaToBeUpdated)
+        public async Task<int> UpdateCuota(Cuota cuotaToBeUpdated, Cuota newCuota)
         {
-            return await _unitOfWork.UpdateAsync(cuotaToBeUpdated);
+            return await _unitOfWork.CommitAsync();
         }
     }
 }

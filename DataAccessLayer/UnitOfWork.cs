@@ -27,13 +27,6 @@ namespace DataAccessLayer
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<int> UpdateAsync<TEntity>(TEntity entityToBeUpdated) where TEntity : class
-        {
-            _context.Update(entityToBeUpdated);
-
-            return await _context.SaveChangesAsync();
-        }
-
         public void Dispose()
         {
             _context.Dispose();

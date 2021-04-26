@@ -17,8 +17,13 @@ namespace ExpensesTracker.Services.Services.Implementations
 
         public async Task<Gasto> CreateGasto(Gasto newGasto)
         {
+
+            newGasto.FechaCreacion = DateTime.Now;
+
             await _unitOfWork.Gastos
                 .AddAsync(newGasto);
+
+            await _unitOfWork.CommitAsync();
 
             return newGasto;
         }
@@ -40,9 +45,16 @@ namespace ExpensesTracker.Services.Services.Implementations
             return await _unitOfWork.Gastos.GetByIdAsync(id);
         }
 
-        public async Task<int> UpdateGasto(Gasto gastoToBeUpdated)
+        public async Task<int> UpdateGasto(Gasto gastoToBeUpdated, Gasto newGasto)
         {
-            return await _unitOfWork.UpdateAsync(gastoToBeUpdated);
+            gastoToBeUpdated.Nombre = newGasto.Nombre;
+            gastoToBeUpdated.Valor = newGasto.Valor;
+            gastoToBeUpdated.EsGastoFijo = newGasto.EsGastoFijo;
+            gastoToBeUpdated.CantidadCuotas = newGasto.CantidadCuotas;
+            gastoToBeUpdated.EsReactivable = newGasto.EsReactivable;
+            gastoToBeUpdated.FechaInicioPago = newGasto.FechaInicioPago;
+
+            return await _unitOfWork.CommitAsync();
         }
     }
 }
