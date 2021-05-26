@@ -37,7 +37,7 @@ namespace ExpensesTrackerAPI
         public void ConfigureServices(IServiceCollection services)
         {
             var jwtSettings = Configuration.GetSection("Jwt").Get<JwtSettings>();
-
+            services.AddCors();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<ICuotasService, CuotasService>();
             services.AddTransient<IGastoService, GastoService>();
@@ -85,6 +85,7 @@ namespace ExpensesTrackerAPI
             });
             services.AddAutoMapper(typeof(Startup));
             services.Configure<JwtSettings>(Configuration.GetSection("Jwt"));
+            
             services.AddAuth(jwtSettings);
         }
 
@@ -99,6 +100,13 @@ namespace ExpensesTrackerAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            // Allow cross domain requests (requests from different domains)
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
 
             // to add this line right before the UseEndpoints middleware, order is very important here.
             app.UseAuth();

@@ -16,9 +16,11 @@ namespace ExpensesTrackerAPI.Controllers
 
     //[Authorize("OnlyTest")] if I would like to authorize using policies too, i should add this.
 
-    [Route("api/[controller]")]
+    [Route("api/gastos")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    // Add this when DefaultScheme is added
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class GastosController : ControllerBase
     {
 

@@ -18,14 +18,14 @@ namespace ExpensesTrackerAPI.Extensions
             JwtSettings jwtSettings)
         {
             services
-                .AddAuthorization(options =>
-                {
-                    options.AddPolicy("OnlyTest", policy => policy.RequireUserName("test@test.com"));
-                })
+                //.AddAuthorization(options =>
+                //{
+                //    options.AddPolicy("OnlyTest", policy => policy.RequireUserName("test@test.com"));
+                //})
                 .AddAuthentication(options =>
                 {
                     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                    //options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
                     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
                 .AddJwtBearer(options =>
@@ -33,6 +33,7 @@ namespace ExpensesTrackerAPI.Extensions
                     options.RequireHttpsMetadata = false;
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
+                        ValidateIssuerSigningKey = true,
                         ValidIssuer = jwtSettings.Issuer,
                         ValidAudience = jwtSettings.Issuer,
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret)),

@@ -17,7 +17,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace ExpensesTrackerAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth")]
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -111,12 +111,12 @@ namespace ExpensesTrackerAPI.Controllers
         private string GenerateJwt(User user, IList<string> roles)
         {
             var claims = new List<Claim>
-                        {
+            {
                             new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
                             new Claim(ClaimTypes.Name, user.UserName),
                             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-                        };
+            };
 
             var roleClaims = roles.Select(r => new Claim(ClaimTypes.Role, r));
             claims.AddRange(roleClaims);
