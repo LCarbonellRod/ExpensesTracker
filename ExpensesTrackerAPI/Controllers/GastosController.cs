@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using ExpensesTracker.Services.Services;
@@ -36,7 +37,8 @@ namespace ExpensesTrackerAPI.Controllers
         [HttpGet("")]
         public async Task<ActionResult<IEnumerable<GastoResource>>> GetAllGastos()
         {
-            var gastos = await _gastoService.GetAllGastos();
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var gastos = await _gastoService.GetAllGastos(userId);
             var gastosResources = _mapper.Map<IEnumerable<Gasto>, IEnumerable<GastoResource>>(gastos);
 
             return Ok(gastosResources);
@@ -45,7 +47,8 @@ namespace ExpensesTrackerAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<IEnumerable<GastoResource>>> GetGastoById(Guid id)
         {
-            var gasto = await _gastoService.GetGastoById(id);
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var gasto = await _gastoService.GetGastoById(id, userId);
             var gastoResources = _mapper.Map<Gasto, GastoResource>(gasto);
 
             return Ok(gastoResources);
@@ -61,12 +64,13 @@ namespace ExpensesTrackerAPI.Controllers
             {
                 return BadRequest(validationResult.Errors);
             }
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var gastoToCreate = _mapper.Map<SaveGastoResource, Gasto>(saveGastoResource);
 
-            var newGasto = await _gastoService.CreateGasto(gastoToCreate);
+            var newGasto = await _gastoService.CreateGasto(gastoToCreate, userId);
 
-            var gasto = await _gastoService.GetGastoById(newGasto.Id);
+            var gasto = await _gastoService.GetGastoById(newGasto.Id, userId);
 
             var gastoResource = _mapper.Map<Gasto, GastoResource>(gasto);
 
@@ -87,8 +91,8 @@ namespace ExpensesTrackerAPI.Controllers
             {
                 return BadRequest(validationResult.Errors);
             }
-
-            var gastoToBeUpdated = await _gastoService.GetGastoById(id);
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var gastoToBeUpdated = await _gastoService.GetGastoById(id, userId);
 
             if (gastoToBeUpdated == null)
             {
@@ -99,7 +103,7 @@ namespace ExpensesTrackerAPI.Controllers
 
             await _gastoService.UpdateGasto(gastoToBeUpdated, gasto);
 
-            var updatedGasto = await _gastoService.GetGastoById(id);
+            var updatedGasto = await _gastoService.GetGastoById(id, userId);
 
             var updateGastoResource = _mapper.Map<Gasto, GastoResource>(updatedGasto);
 
@@ -112,8 +116,8 @@ namespace ExpensesTrackerAPI.Controllers
         {
             if (id == null)
                 return BadRequest();
-
-            var gasto = await _gastoService.GetGastoById(id);
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var gasto = await _gastoService.GetGastoById(id, userId);
 
             if (gasto == null)
                 return NotFound();

@@ -37,10 +37,8 @@ namespace Expenses_Tracker.Repositories
             // Improve this and show errors
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                var token = await response.Content.ReadAsStringAsync();
-                userToLogIn.Token = token;
-
-                return userToLogIn;
+                var userString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<UserAuthenticationModel>(userString);
             }
             else
             {

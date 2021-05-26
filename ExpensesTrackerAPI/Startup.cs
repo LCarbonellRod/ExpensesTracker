@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DataAccessLayer;
+using DataAccessLayer.Repositories;
 using ExpensesTracker.Services.Services;
 using ExpensesTracker.Services.Services.Implementations;
 using ExpensesTrackerAPI.Extensions;
@@ -38,6 +39,9 @@ namespace ExpensesTrackerAPI
         {
             var jwtSettings = Configuration.GetSection("Jwt").Get<JwtSettings>();
             services.AddCors();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IGastoRepository, GastoRepository>();
+            services.AddScoped<ICuotaRepository, CuotaRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<ICuotasService, CuotasService>();
             services.AddTransient<IGastoService, GastoService>();

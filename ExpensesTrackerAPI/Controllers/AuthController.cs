@@ -63,7 +63,10 @@ namespace ExpensesTrackerAPI.Controllers
             if (userSigninResult)
             {
                 var roles = await _userManager.GetRolesAsync(user);
-                return Ok(GenerateJwt(user, roles));
+                userLoginResource.Token = GenerateJwt(user, roles);
+                userLoginResource.Roles = roles;
+                userLoginResource.Id = user.Id.ToString();
+                return Ok(userLoginResource);
             }
 
             return BadRequest("Email or password incorrect.");

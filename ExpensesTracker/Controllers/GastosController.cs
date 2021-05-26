@@ -20,9 +20,9 @@ namespace Expenses_Tracker.Controllers
             _gastosRepository = gastosRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var allGastos = _gastosRepository.GetAllAsync(StaticDetails.GastoAPIPath, HttpContext.Session.GetString("JWToken"));
+            var allGastos = await _gastosRepository.GetAllAsync(StaticDetails.GastoAPIPath, HttpContext.Session.GetString("JWToken"));
             return View(allGastos);
         }
     }

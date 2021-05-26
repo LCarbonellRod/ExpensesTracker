@@ -10,15 +10,18 @@ namespace ExpensesTracker.Services.Services.Implementations
     public class GastoService : IGastoService
     {
         private readonly IUnitOfWork _unitOfWork;
-        public GastoService(IUnitOfWork unitOfWork)
+        private readonly IGastoRepository _gastoRepository;
+        public GastoService(IUnitOfWork unitOfWork, IGastoRepository gastoRepository)
         {
             this._unitOfWork = unitOfWork;
+            _gastoRepository = gastoRepository;
         }
 
-        public async Task<Gasto> CreateGasto(Gasto newGasto)
+        public async Task<Gasto> CreateGasto(Gasto newGasto, string userId)
         {
 
             newGasto.FechaCreacion = DateTime.Now;
+            newGasto.UserId = userId;
 
             await _unitOfWork.Gastos
                 .AddAsync(newGasto);
@@ -35,14 +38,14 @@ namespace ExpensesTracker.Services.Services.Implementations
             await _unitOfWork.CommitAsync();
         }
 
-        public async Task<IEnumerable<Gasto>> GetAllGastos()
+        public async Task<IEnumerable<Gasto>> GetAllGastos(string userId)
         {
-            return await _unitOfWork.Gastos.GetAllAsync();
+            return await _gastoRepository.GetAllAsync(userId);
         }
 
-        public async Task<Gasto> GetGastoById(Guid id)
+        public async Task<Gasto> GetGastoById(Guid id, string userId)
         {
-            return await _unitOfWork.Gastos.GetByIdAsync(id);
+            return await _gastoRepository.GetWithCuotasByIdAsync(id, userId);
         }
 
         public async Task<int> UpdateGasto(Gasto gastoToBeUpdated, Gasto newGasto)

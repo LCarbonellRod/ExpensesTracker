@@ -20,6 +20,7 @@ namespace ExpensesTrackerCore.Models
         public DateTime? FechaPagado { get; set; }
 
         public DateTime FechaInicioPago { get; set; }
+        public string UserId { get; set; }
 
         public List<Cuota> Cuotas { get; set; } = new List<Cuota>();
     }

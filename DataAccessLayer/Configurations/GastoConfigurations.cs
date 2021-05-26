@@ -33,6 +33,10 @@ namespace DataAccessLayer.Configurations
                 .IsRequired();
 
             builder
+                .Property(m => m.UserId)
+                .IsRequired();
+
+            builder
                 .ToTable("Gasto");
         }
     }
